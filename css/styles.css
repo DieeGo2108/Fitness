@@ -1,0 +1,107 @@
+:root {
+  --primary-color:        #f13a11;
+  --white-color:          #ffffff;
+  --dark-color:           #171819;
+  --about-bg-color:       #f9f9f9;
+
+  --gray-color:           #909090;
+  --link-color:           #404040;
+  --p-color:              #666262;
+
+  --base-font-family:     'Plain', sans-serif;
+  --font-weight-bold:     bold;
+  --font-weight-normal:   normal;
+  --font-weight-light:    300;
+  --font-weight-thin:     100;
+
+  --h1-font-size:         48px;
+  --h2-font-size:         36px;
+  --h3-font-size:         28px;
+  --h4-font-size:         24px;
+  --h5-font-size:         22px;
+  --h6-font-size:         22px;
+  --p-font-size:          18px;
+  --base-font-size:       16px;
+  --menu-font-size:       14px;
+
+  --border-radius-large:  100%;
+  --border-radius-small:  2px;
+}
+
+
+body{
+  background-color: black;
+  padding: 80px 0;
+  margin: 70px auto;
+}
+
+header div .row h1{
+  color: var(--white-color);
+}
+
+
+.price_grid{
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.price_card{
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #3e3e3e;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  height: 100%;
+}
+
+.price_card:hover{
+  background-color: #3a3a3a;
+  border-color: var(--primary-color);
+}
+
+.price_card_content{
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.price_card h4{
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.price_card h3{
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--white);
+  border-bottom: 2px solid var(--white);
+}
+
+.price_card p{
+  margin-bottom: .75rem;
+  color: var(--white);
+}
+
+.price_card p i{
+  margin-right: .5rem;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+.price_btn{
+  color: var(--secondary-color);
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+}
+
+.price_btn:hover{
+  color: var(--white);
+  background-color: var(--secondary-color);
+}
